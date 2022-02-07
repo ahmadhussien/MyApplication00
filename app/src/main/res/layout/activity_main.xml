@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/ET_name"
+        android:layout_width="368dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.235"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ET_surname"
+        android:layout_width="368dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:inputType="textPersonName"
+        android:text="SurName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.232"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ET_name" />
+
+    <EditText
+        android:id="@+id/ET_marks"
+        android:layout_width="368dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:inputType="textPersonName"
+        android:text="Marks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.232"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ET_surname" />
+
+    <EditText
+        android:id="@+id/ET_id"
+        android:layout_width="368dp"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:text="ID"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.232"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ET_marks"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <Button
+        android:id="@+id/B_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:text="Delete"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ET_id" />
+
+    <Button
+        android:id="@+id/B_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="44dp"
+        android:text="View"
+        app:layout_constraintStart_toEndOf="@+id/B_delete"
+        app:layout_constraintTop_toBottomOf="@+id/ET_id" />
+
+    <Button
+        android:id="@+id/B_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="44dp"
+        android:text="ADD"
+        app:layout_constraintStart_toEndOf="@+id/B_view"
+        app:layout_constraintTop_toBottomOf="@+id/ET_id" />
+
+    <Button
+        android:id="@+id/B_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="44dp"
+        android:text="UpDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/B_add"
+        app:layout_constraintTop_toBottomOf="@+id/ET_id" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
